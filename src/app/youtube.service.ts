@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { isNgTemplate } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root',
