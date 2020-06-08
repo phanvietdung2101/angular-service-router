@@ -7,7 +7,7 @@ export class DictionaryService {
   constructor() {}
 
   getResult(word) {
-    let url  = 'https://wordsapiv1.p.rapidapi.com/words/' + word
+    let url  = 'https://wordsapiv1.p.rapidapi.com/words/' + word;
     fetch(url, {
       method: 'GET',
       headers: {
@@ -16,7 +16,7 @@ export class DictionaryService {
       },
     })
       .then((response) => {
-        return response
+        console.log(response);
       })
       .catch((err) => {
         console.log(err);
