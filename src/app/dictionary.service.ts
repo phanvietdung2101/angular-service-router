@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
-
 @Injectable({
   providedIn: 'root',
 })
 export class DictionaryService {
+
   constructor() {}
 
   getResult(word) {
-    let url  = 'https://wordsapiv1.p.rapidapi.com/words/' + word;
-    fetch(url, {
+    fetch('https://wordsapiv1.p.rapidapi.com/words/' + word, {
       method: 'GET',
       headers: {
         'x-rapidapi-host': 'wordsapiv1.p.rapidapi.com',
@@ -16,7 +15,7 @@ export class DictionaryService {
       },
     })
       .then((response) => {
-        console.log(response);
+        console.log(response.json()) ;
       })
       .catch((err) => {
         console.log(err);
