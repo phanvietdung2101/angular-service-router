@@ -8,6 +8,7 @@ import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.co
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 import { DictionaryComponent } from './dictionary/dictionary.component';
 import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

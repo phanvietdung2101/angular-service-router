@@ -1,3 +1,4 @@
+import { DictionaryService } from './../dictionary.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dictionary-detail.component.css']
 })
 export class DictionaryDetailComponent implements OnInit {
-
-  constructor() { }
+  word: string;
+  result;
+  constructor(private dictionaryService: DictionaryService) { }
 
   ngOnInit(): void {
+  }
+
+  search(){
+    this.result = this.dictionaryService.getResult(this.word);
   }
 
 }
