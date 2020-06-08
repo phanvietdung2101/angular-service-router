@@ -13,7 +13,7 @@ const routes: Routes = [
     path: 'youtube',
     component: YoutubePlaylistComponent,
     children: [{
-      path: 'id',
+      path: ':id',
       component: YoutubePlayerComponent
     }]
   }
