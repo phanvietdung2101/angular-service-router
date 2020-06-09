@@ -9,6 +9,7 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
 import { DictionaryComponent } from './dictionary/dictionary.component';
 import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
 import { FormsModule } from '@angular/forms'
+import { HttpClientModule, HttpClient, HttpHeaders } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
